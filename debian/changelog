@@ -1,3 +1,12 @@
+karaage3-usage (3.1.6-1) unstable; urgency=low
+
+  * Updates to xmlrpc function.
+  * Add new tests.
+  * Add add_modules_used xmlrpc function.
+  * Fix Python3 depends.
+
+ -- Brian May <bam@debian.org>  Thu, 30 Oct 2014 15:04:55 +1100
+
 karaage3-usage (3.1.5-1) unstable; urgency=low
 
   * Fix daily cleanup.

@@ -9,7 +9,7 @@ Build-Depends: debhelper (>=8.1.0), dh-python,
  python3-all, python3-setuptools, python3-django,
  python3-flake8, python3-django-celery, python3-matplotlib,
  python3-karaage (>= 3.1.8), python3-kgsoftware, python3-mock,
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://github.com/Karaage-Cluster/karaage-usage
 Vcs-Git: git://github.com/Karaage-Cluster/karaage-usage
 Vcs-Browser: https://github.com/Karaage-Cluster/karaage-usage
