@@ -40,16 +40,13 @@ from karaage.machines.models import Account, MachineCategory
 
 
 class XmlrpcTestCase(TestCase):
-    def get_server_proxy(self):
-        return xmlrpclib.ServerProxy(
-            'http://testserver/xmlrpc/',
-            transport=DjangoTestClientTransport(self.client),
-        )
-
     def setUp(self):
         super(XmlrpcTestCase, self).setUp()
         call_command('loaddata', 'karaage_data', **{'verbosity': 0})
-        self.server = self.get_server_proxy()
+        self.server = xmlrpclib.ServerProxy(
+            'http://testserver/xmlrpc/',
+            transport=DjangoTestClientTransport(self.client),
+        )
 
     def test_parse_usage(self):
         server = self.server
