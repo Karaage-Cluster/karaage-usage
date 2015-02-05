@@ -1,4 +1,4 @@
-# Copyright 2007-2014 VPAC
+# Copyright 2007-2015 VPAC
 #
 # This file is part of Karaage.
 #
@@ -42,7 +42,7 @@ from karaage.machines.models import Account, MachineCategory
 class XmlrpcTestCase(TestCase):
     def setUp(self):
         super(XmlrpcTestCase, self).setUp()
-        call_command('loaddata', 'karaage_data', **{'verbosity': 0})
+        call_command('loaddata', 'test_karaage', **{'verbosity': 0})
         self.server = xmlrpclib.ServerProxy(
             'http://testserver/xmlrpc/',
             transport=DjangoTestClientTransport(self.client),
